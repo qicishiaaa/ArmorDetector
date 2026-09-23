@@ -53,6 +53,7 @@ private:
     
     std::vector<std::pair<cv::RotatedRect, cv::Scalar>> m_last_armors;
     int m_lost_frames = 0;
+    std::vector<std::pair<cv::RotatedRect, cv::Scalar>> m_smoothed_armors; 
 };
 
 } 
